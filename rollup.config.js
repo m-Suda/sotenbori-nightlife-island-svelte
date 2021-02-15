@@ -47,6 +47,9 @@ export default {
             preprocess: sveltePreprocess({
                 sourceMap: !production,
                 scss: { includePaths: ['src'] },
+                postcss: {
+                    plugins: [require('autoprefixer')],
+                },
             }),
             compilerOptions: {
                 // enable run-time checks when not in production
