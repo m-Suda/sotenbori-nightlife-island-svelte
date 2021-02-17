@@ -1,8 +1,4 @@
-<script lang="ts">
-    import type { Cast } from 'sotenbori-nightlife-island-core';
-
-    export let castInAnteroom: Cast;
-</script>
+<script lang="ts"></script>
 
 <div class="cast-in-anteroom"></div>
 

@@ -5,22 +5,22 @@
     export let castsInAnteroom: Cast[];
 </script>
 
-<div class="anteroom">
+<ul class="anteroom">
     {#each castsInAnteroom as castInAnteroom}
-        <div class="anteroom__cast">
-            <CastInAnteroom castInAnteroom="{castInAnteroom}" />
-        </div>
+        <li class="anteroom__cast">
+            <CastInAnteroom />
+        </li>
     {/each}
-</div>
+</ul>
 
 <style lang="scss">
     .anteroom {
+        height: 100%;
         background-color: rgba(196, 196, 196, 0.5);
         display: flex;
         flex-direction: column;
-        padding: 2rem;
 
-        .anteroom__cast {
+        .anteroom__cast:not(:first-of-type) {
             margin-top: 1rem;
         }
     }
